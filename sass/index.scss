@@ -1,0 +1,18 @@
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import "./variables.scss";
+@import "./mixins.scss";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Nunito;
+  font-size: 18px;
+  color: #333333;
+}
