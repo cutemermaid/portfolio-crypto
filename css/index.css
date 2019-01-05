@@ -1,0 +1,86 @@
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Nunito;
+  font-size: 18px;
+  color: #333333;
+}
+
+.header-parent {
+  width: 100%;
+  background: #1b264b;
+  height: 163px;
+}
+.header-parent .crypto-header {
+  max-width: 1440px;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  padding-top: 42px;
+}
+@media (max-width: 767px) {
+  .header-parent .crypto-header {
+    height: auto;
+    padding: 0px 20px;
+  }
+}
+.header-parent .crypto-header .crypto-logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 24px;
+}
+.header-parent .crypto-header .crypto-header-links {
+  display: flex;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .header-parent .crypto-header .crypto-header-links {
+    display: none;
+  }
+}
+.header-parent .crypto-header .crypto-header-links .links4 {
+  margin-right: 44px;
+}
+.header-parent .crypto-header .crypto-header-links button {
+  width: 90px;
+  height: 30px;
+  border-radius: 4px;
+  background: #fdfffc;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #1b264b;
+}
+.header-parent .crypto-header .crypto-header-links .crypto-menu {
+  width: 20px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .header-parent .crypto-header .crypto-header-links .crypto-menu {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

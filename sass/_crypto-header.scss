@@ -1,0 +1,66 @@
+.header-parent {
+  width: 100%;
+  background: #1b264b;
+  height: 163px;
+
+  .crypto-header {
+    max-width: $desktop-width;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    padding-top: 42px;
+
+    @include mobile {
+      height: auto;
+      padding: 0px 20px;
+    }
+
+    .crypto-logo {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      font-weight: 900;
+      line-height: normal;
+      font-size: 24px;
+    }
+    .crypto-header-links {
+      display: flex;
+      font-weight: 600;
+      line-height: normal;
+      font-size: 18px;
+
+      @include mobile {
+        display: none;
+      }
+      .links4 {
+        margin-right: 44px;
+      }
+      button {
+        width: 90px;
+        height: 30px;
+        border-radius: 4px;
+        background: #fdfffc;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: #1b264b;
+      }
+
+      .crypto-menu {
+        width: 20px;
+        height: 20px;
+        display: none;
+        cursor: pointer;
+
+        @include mobile {
+          display: block;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
